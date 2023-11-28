@@ -22,4 +22,7 @@ urlpatterns = [
     path('news/<int:pk>/delete/',
          views.NewsDeleteView.as_view(),
          name = 'news_delete'),
+     path('contact/',
+          views.ContactView.as_view(),
+          name='contact'),
 ]
